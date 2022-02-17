@@ -1,0 +1,10 @@
+extends layout 
+
+block content
+    h2 Passengers
+    p1 there are #{passengers.length} passengers waiting.
+
+    ol
+        each passenger in passengers 
+            li 
+                a(href=`/passengers/${passenger.id}`) #{passenger.name}

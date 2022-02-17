@@ -1,0 +1,17 @@
+
+  
+POST http://localhost:3000/passengers HTTP/1.1
+content-type: application/json
+
+{"name":"Ali", "location": "İzmir"}
+
+###
+
+GET http://localhost:3000/passengers/a1a75ada-dda4-43be-a870-d3a32f9b325a HTTP/1.1
+
+###
+DELETE  http://localhost:3000/passengers/918f27d2-ad5a-4018-b730-df2a877603bb HTTP/1.1
+
+###
+PATCH   http://localhost:3000/passengers/918f27d2-ad5a-4018-b730-df2a877603bb HTTP/1.1
+content-type:application/json

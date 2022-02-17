@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+   block vars
+   head
+      meta(charset="UTF-8")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      - var myTitle = titleVar ? titleVar : "Taxi-booking app"
+      title #{myTitle}
+   style.
+      body{
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+      }
+   body 
+      h1 Welcom to taxi-booking app      
+
+      block content
+      script(src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js")
